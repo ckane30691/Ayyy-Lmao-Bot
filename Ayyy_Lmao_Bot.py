@@ -1,7 +1,7 @@
 import praw
 import time
 
-r = praw.Reddit(user_agent = "Ayyy Lmao Bot by Cory /u/belly_on_wheels")
+r = praw.Reddit(user_agent = "Ayyy Lmao Bot YOUR NAME GOES HERE FOLLOWED BY YOUR USER NAME")
 r.login()
 
 words_to_match = ["ayyy", "ayy", "ayyyy", "ayyyyy", "ay"]
@@ -9,7 +9,7 @@ cache = []
 
 def run_bot():
 	print ("Grabbing Subreddit...")
-	subreddit = r.get_subreddit("test")
+	subreddit = r.get_subreddit("test") #you can choose your subreddit by editing this line
 	print("Grabbing Coments...")
 	comments = subreddit.get_comments(limit=25)
 	for comment in comments:
